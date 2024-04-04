@@ -21,15 +21,15 @@
 
 1. When no argument is passed the output is:
    
-   <img width="204" alt="ls_noarg" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/dfa7ee57-3b0b-46f0-9330-711d9e31f3bb">
+ <img width="204" alt="ls_noarg" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/dfa7ee57-3b0b-46f0-9330-711d9e31f3bb">
    
-   The working directory when `ls` was run is `/home`. I got this output because the `ls` command with no arguments sets the workng          directory to `home` which is already a given and shows the files in this working directory. This is not an error.
+  The working directory when `ls` was run is `/home`. I got this output because the `ls` command with no arguments sets the workng          directory to `home` which is already a given and shows the files in this working directory. This is not an error.
    
 2. When an argument to a directory is passed the output is:
    
-   <img width="391" alt="ls_direcarg" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/daf4ed69-d098-41ee-9fff-b01075262ed3">
+<img width="391" alt="ls_direcarg" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/daf4ed69-d098-41ee-9fff-b01075262ed3">
    
-   The working directory when `ls lecture1` was passed is also `/home`. I got this output because the `ls` command does not change the       working directory, it lists what is inside the argument. This is not an error.
+  The working directory when `ls lecture1` was passed is also `/home`. I got this output because the `ls` command does not change the       working directory, it lists what is inside the argument. This is not an error.
    
 3. When an argument to a file is passed the output is:
    
