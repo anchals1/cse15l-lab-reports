@@ -6,14 +6,16 @@
    The working directory when this command was run is `/home`. I got this output because the `cd` command with no arguments sets the         workng directory to home which is already a given. This is not an error.
    
 2. When an argument to a directory is passed the output is:
+   
    <img width="277" alt="cd_direcarg" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/110224cc-2b4a-45a0-98b1-cbf7f030fbe5">
    
    The working directory when `cd lecture1` was passed is `/home/lecture1`. I got this output because `lecture1` is inside the home          directory so when this runs we are changing from `home` to `lecture1`. This is not an error.
    
 3. When an argument to a file is passed the output is:
   <img width="375" alt="cd_filearg" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/f48763e4-bc69-476f-978e-b8bf4558c463">
-  
-   The working directory for `cd messages` is `/home/lecture1/messages` in this case as we are passing an argument to change the             directory to a file in `lecture1` so the `cd` command directs to messages inside `lecture1`. This is not an error.
+
+  The working directory for `cd messages` is `/home/lecture1/messages` in this case as we are passing an argument to change the             directory to a file in `lecture1` so the `cd` command directs to messages inside `lecture1`. This is not an error.
+     
 ---------------------------------------
 ## LS command
 
