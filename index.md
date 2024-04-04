@@ -7,9 +7,9 @@
    
 2. When an argument to a directory is passed the output is:
    
-   <img width="277" alt="cd_direcarg" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/110224cc-2b4a-45a0-98b1-cbf7f030fbe5">
+<img width="277" alt="cd_direcarg" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/110224cc-2b4a-45a0-98b1-cbf7f030fbe5">
    
-   The working directory when `cd lecture1` was passed is `/home/lecture1`. I got this output because `lecture1` is inside the home          directory so when this runs we are changing from `home` to `lecture1`. This is not an error.
+  The working directory when `cd lecture1` was passed is `/home/lecture1`. I got this output because `lecture1` is inside the home          directory so when this runs we are changing from `home` to `lecture1`. This is not an error.
    
 3. When an argument to a file is passed the output is:
   <img width="375" alt="cd_filearg" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/f48763e4-bc69-476f-978e-b8bf4558c463">
