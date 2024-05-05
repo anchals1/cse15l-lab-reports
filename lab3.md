@@ -35,7 +35,7 @@ static void reverseInPlace(int[] arr) {
 ```
 **Output when Running JUnit test with bug in method:**
 
-LAB3PIC1
+<img width="927" alt="lab3pic1" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/6dfb88eb-3324-4e3a-a368-5550e2ea3ec9">
 
 
 **Corrected Code:**
@@ -56,7 +56,7 @@ static void reverseInPlace(int[] arr) {
 
 **Output when Running JUnit test with corrected method:**
 
-LAB3PIC2
+<img width="821" alt="lab3pic2" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/77a7b97d-6c0d-4338-b897-944ba33310f5">
 
 **How I debugged:**
 
@@ -83,7 +83,7 @@ Six large controlled population-based studies of
           examining health status over time, we added a sixth
 ```
 
-LAB3PIC3
+<img width="672" alt="lab3pic3" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/a87e6a54-52e3-4790-a232-07d500a2ac84">
 
 
 ```
@@ -102,7 +102,7 @@ grep -i "heart" technical/*/1468-6708-3-10
         Assessment of Patients with Diseases of the Heart: AHA
 ```
 
-LAB3PIC4
+<img width="506" alt="lab3pic4" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/6d15e56c-a00e-4153-8d4f-84f1d66ae28d">
 
 When grep is used with `-i`, it means grep is going to search for lines in the file/files for the given string but the case is insensitive. We can see how it is useful in the example, the string being searched for is "six" and if a line in a file has "Six" or any other variation of it with capital, that line will be a match. This is convenient since the user doesn't have to worry about including multiple variations of the string when they are searching for matching lines.
 
@@ -123,7 +123,7 @@ technical/biomed/1476-511X-1-2.txt:          not removed the night before, and s
 technical/biomed/rr37.txt:          or nocturnal), use of systemic corticosteroids, use of
 ```
 
-LAB3PIC5
+<img width="713" alt="lab3pic5" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/732acd2e-6172-4c7b-8019-bf64b1cd75db">
 
 
 ```
@@ -132,7 +132,7 @@ technical/plos/pmed.0010008.txt:        bronchodilation to relieve dyspnea, anti
 technical/plos/pmed.0020017.txt:          physicians and manifested by lessened dyspnea and cancer-related pain. However, this
 ```
 
-LAB3PIC6
+<img width="724" alt="lab3pic6" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/ce7bf982-4bf6-44ca-b7db-7c215f11f0d8">
 
 When grep is used with `-r`, it means grep will search for lines in the file/files for the given string recursively. This means all the files in the directory in the argument will be searched and the files in all the subdirectories will be searched too and matching lines will be returned. In this example, the string grep is searching for is "noctural" and it's recursively searching for this in the biomed directory and any other subdirectories. This is repeated with the string "dyspnea".
 
@@ -145,7 +145,7 @@ grep -w "all" technical/plos/journal.pbio.0020001.txt
         Canada across all subject areas in
 ```
 
-LAB3PIC7
+<img width="664" alt="lab3pic7" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/cb39ebe7-6ee6-4738-87ab-008e959f8b80">
 
 
 ```
@@ -160,7 +160,7 @@ grep -w "for" technical/plos/journal.pbio.0020010.txt
         of research to provide opportunities for high-quality research conducted outside North
 ```
 
-LABEPIC8
+<img width="676" alt="lab3pic8" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/01dd4014-debf-4d01-8821-0925304c9714">
 
 When grep is used with `-w`, it means grep will search for the lines where only the string given is occuring. This means it won't return the lines where the string is part of a larger word, it will only return the lines where the string is a full word or phrase itself. In these examples, the strings are "all" and "for" which can both be found in larger words. If we want to look for lines with these words by themselves and we don't use `-w`, then the output could include results that are not what we are looking for.
 
@@ -177,7 +177,7 @@ grep -l "Air Force One" *.txt
   chapter-3.txt
 ```
 
-LAB3PIC9
+<img width="499" alt="lab3pic9" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/ee37dc16-b7f3-45f0-9dac-c2400bedc93b">
 
 
 ```
@@ -190,6 +190,6 @@ technical/biomed/1476-511X-1-2.txt
 technical/biomed/rr37.txt
 ```
 
-LAB3PIC10
+<img width="609" alt="lab3pic10" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/12cf4c20-24ef-40a9-a2a2-c6dbb46d0ea9">
 
 When grep is used with `-l`, a list of files that contain the string in the command is returned. In these examples, the first output we see is all the files that contain the string "Air Force One", and the second output has all the files that contain the string "nocturnal". This is helpful if we want to know which files contain a keyword/phrase we want to filter by so there's a smaller list of files and is easier to navigate. 
