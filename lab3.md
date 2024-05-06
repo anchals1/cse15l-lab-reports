@@ -65,7 +65,7 @@ For the reverseInPlace method, any input array that had more than value would be
 
 ## Part 2 - Researching Commands
 
-**Command:** grep
+**Command:** `grep`
 
 **4 Interesting Command Line Options:**
 1. `-i`
