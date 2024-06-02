@@ -6,18 +6,16 @@
 **Student Post:**
 
 List Reverse Method:
-IMAGE
+
+<img width="388" alt="Screenshot 2024-06-01 at 7 50 37 PM" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/7976ba69-0755-427e-af32-fccd9cc6e22c">
 
 Test Output:
-IMAGE
+
+<img width="895" alt="Screenshot 2024-06-01 at 10 48 16 PM" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/a06e1324-f551-486f-a2d7-6a9494236b3a">
 
 Hello, 
 
-I need help with errors I am running into when I try to test the reverseInPlace method that is meant to reverse an array in place. With the orginal code I get the error 
-shown above when I run the Java file with JUnit. According to the error, the actual value of the second index of the reversed array we got was 9 but the expected value
-was 7 so this is returning the wrong result. According to me, the issue could lie in the fact that the last digit of both the original and sorted arrays is the same so 
-to me this would mean that the arrays are not being sorted properly and the failure inducing input for this method would be an array that has a length that is greater 
-than one since I think the error is that the method's reusing values that have already been sorted at an index when the method is sorting in place. 
+I need help with errors I am running into when I try to test the reverseInPlace method that is meant to reverse an array in place. With the orginal code I get the error shown above when I run the Java file with JUnit. According to the error, the actual value of the second index of the reversed array we got was 9 but the expected value was 7 so this is returning the wrong result. According to me, the issue could lie in the fact that the last digit of both the original and sorted arrays is the same so to me this would mean that the arrays are not being sorted properly and the failure inducing input for this method would be an array that has a length that is greater than one since I think the error is that the method's reusing values that have already been sorted at an index when the method is sorting in place. 
 
 **TA Response:**
 
@@ -29,31 +27,33 @@ in the loop so you can see if it's the correct value at a specific index.
 
 **Student Response:**
 
-Image
-Image
+<img width="584" alt="Screenshot 2024-06-01 at 11 06 32 PM" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/6ae3612b-3548-44d1-ade9-2352d5bf8c5d">
 
-Thank you for the response! I decided to go with your recommendation and use print statements to see what was being replaced when the list is reversed with 7,8,and 9 as the
-input. According to what was printed, it seems like everything is being correctly reversed except in the last run the code is swapping out 9 for 9 which is where the problem rises. 
-The mothod's returning {9, 8, 9} but it should be {9, 8, 7} so the array is incorrectly getting sorted because it's reusing what has already been sorted."Swapping 9 for 9" means 
-at the last index the method's using the first element in the sorted array which is 9, but it’s supposed to be using the first element from the original array which is 7. 
+
+<img width="396" alt="Screenshot 2024-06-01 at 11 43 57 PM" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/9a63c4f8-f0ea-48db-a431-15f38bd5bf45">
+
+Thank you for the response! I decided to go with your recommendation and use print statements to see what was being replaced when the list is reversed with 7,8,and 9 as the input. According to what was printed, it seems like everything is being correctly reversed except in the last run the code is swapping out 9 for 9 which is where the problem rises. The mothod's returning {9, 8, 9} but it should be {9, 8, 7} so the array is incorrectly getting sorted because it's reusing what has already been sorted."Swapping 9 for 9" means at the last index the method's using the first element in the sorted array which is 9, but it’s supposed to be using the first element from the original array which is 7. 
 
 **Information About Setup:**
 
 File and directory structure needed:
-IMAGE
 
-In the structure there's a test.sh file which contains the commands to run JUnit tests to run the ArrayTests.java file, which contains the code to test the reverseInPlace method, 
-and the reverseInPlace method which is located in ArrayExamples.java.
+<img width="578" alt="Screenshot 2024-06-01 at 11 45 08 PM" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/331a2616-9b2f-48fe-af3a-c14d0a8a33f8">
+
+In the structure there's a test.sh file which contains the commands to run JUnit tests to run the ArrayTests.java file, which contains the code to test the reverseInPlace method, and the reverseInPlace method which is located in ArrayExamples.java.
 
 Content of Method File before fixing bug:
-Image 1
+
+<img width="388" alt="Screenshot 2024-06-01 at 7 50 37 PM" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/7976ba69-0755-427e-af32-fccd9cc6e22c">
+
 
 Command I ran to trigger the bug:
 
 `bash test.sh`
 
 test.sh contains: 
-Image
+
+<img width="767" alt="Screenshot 2024-06-01 at 11 46 02 PM" src="https://github.com/anchals1/cse15l-lab-reports/assets/165833636/5e3b5c9e-fe0e-442b-a650-ffe870588f3b">
 
 How to fix bug:
 
